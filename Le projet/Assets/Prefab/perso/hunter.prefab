@@ -851,6 +851,8 @@ GameObject:
   - component: {fileID: 1407356678855066747}
   - component: {fileID: 6794446975000536304}
   - component: {fileID: 2947337845274168908}
+  - component: {fileID: 8178295941405434289}
+  - component: {fileID: 3501764080764080528}
   m_Layer: 9
   m_Name: hunter
   m_TagString: Model
@@ -888,7 +890,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &1407356678855066747
 BoxCollider:
@@ -936,6 +938,45 @@ MonoBehaviour:
   camera: {fileID: 6900918824870885872}
   player: {fileID: 0}
   cameraRotationLimit: 85
+--- !u!114 &8178295941405434289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6900918824358221135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6967e9e6f9693408d5c98b652bd304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 10
+  range: 100
+  ammo: 40
+  chargercapacity: 40
+  WeaponCooldown: 0.1
+  WeaponActualCooldown: 0.3
+--- !u!114 &3501764080764080528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6900918824358221135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23e919d87d882f14c86a196019357e6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 8178295941405434289}
+  cam: {fileID: 6900918824870885872}
+  _player: {fileID: 0}
+  ReloadTime: 0
+  shotaudio: {fileID: 0}
+  gameManager: {fileID: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &6900918824362820437
 GameObject:
   m_ObjectHideFlags: 0
