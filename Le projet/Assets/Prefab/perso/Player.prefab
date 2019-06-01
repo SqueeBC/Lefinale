@@ -310,6 +310,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: hunter
       objectReference: {fileID: 0}
+    - target: {fileID: 2947337845274168908, guid: 4fbb5ad86c641f747a828eb9bf526d59,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1942580560511836011}
     - target: {fileID: 6900918824358221134, guid: 4fbb5ad86c641f747a828eb9bf526d59,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -365,11 +370,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2947337845274168908, guid: 4fbb5ad86c641f747a828eb9bf526d59,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1942580560511836011}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fbb5ad86c641f747a828eb9bf526d59, type: 3}
 --- !u!4 &7295303845608813903 stripped
